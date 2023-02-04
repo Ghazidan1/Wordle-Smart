@@ -14699,7 +14699,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Enter Valid Chars	at
+<pre>Enter Valid Chars	ta
 </pre>
 </div>
 </div>
@@ -14886,6 +14886,46 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">checkTemp</span><span class="p">(</span><span class="n">word</span><span class="p">,</span><span class="n">template</span> <span class="p">):</span>
+    <span class="k">for</span> <span class="n">char</span><span class="p">,</span><span class="n">temp</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">word</span><span class="p">,</span><span class="n">template</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">temp</span><span class="o">!=</span><span class="s1">&#39;0&#39;</span><span class="ow">and</span> <span class="n">char</span><span class="o">!=</span><span class="n">temp</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">return</span> <span class="kc">True</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">checkNotTemp</span><span class="p">(</span><span class="n">word</span><span class="p">,</span><span class="n">template</span> <span class="p">):</span>
+    <span class="k">for</span> <span class="n">char</span><span class="p">,</span><span class="n">temp</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">word</span><span class="p">,</span><span class="n">template</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">temp</span><span class="o">!=</span><span class="s1">&#39;0&#39;</span><span class="ow">and</span> <span class="n">char</span><span class="o">==</span><span class="n">temp</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">return</span> <span class="kc">False</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">inValue</span><span class="o">=</span><span class="n">charsValue</span><span class="p">(</span><span class="n">In</span><span class="p">)</span>
 <span class="n">outValue</span><span class="o">=</span><span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">Out</span><span class="p">:</span>
@@ -14902,7 +14942,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">newWords</span><span class="o">=</span><span class="p">[]</span>
@@ -14925,28 +14965,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">checkTemp</span><span class="p">(</span><span class="n">word</span><span class="p">,</span><span class="n">template</span> <span class="p">):</span>
-    <span class="k">for</span> <span class="n">char</span><span class="p">,</span><span class="n">temp</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">word</span><span class="p">,</span><span class="n">template</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">temp</span><span class="o">!=</span><span class="s1">&#39;0&#39;</span><span class="ow">and</span> <span class="n">char</span><span class="o">!=</span><span class="n">temp</span><span class="p">:</span>
-            <span class="k">return</span> <span class="kc">False</span>
-        <span class="k">continue</span>
-    <span class="k">return</span> <span class="kc">True</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tempWords</span><span class="o">=</span><span class="p">[]</span>
@@ -14965,17 +14984,15 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">finalWords</span><span class="o">=</span><span class="p">[]</span>
 <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">tempWords</span><span class="p">:</span>
-    <span class="n">check</span><span class="o">=</span><span class="kc">True</span>
     <span class="k">for</span> <span class="n">temp</span> <span class="ow">in</span> <span class="n">Nottemp</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">checkTemp</span><span class="p">(</span><span class="n">word</span><span class="p">,</span><span class="n">temp</span><span class="p">):</span>
-            <span class="n">check</span><span class="o">=</span><span class="kc">False</span>
-        <span class="k">continue</span>
-    <span class="k">if</span> <span class="n">check</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">checkNotTemp</span><span class="p">(</span><span class="n">word</span><span class="p">,</span><span class="n">temp</span><span class="p">):</span>
+            <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span>
         <span class="n">finalWords</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
 </pre></div>
 
@@ -15000,7 +15017,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">finalWords</span><span class="p">)</span>
@@ -15021,7 +15038,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
 
@@ -15120,7 +15137,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">chars</span><span class="o">=</span><span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">finalWords</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">word</span><span class="p">]</span>
@@ -15144,7 +15161,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 
 
 
@@ -15171,6 +15188,235 @@ class="
 >
 </div>
 
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Recommendation">Recommendation<a class="anchor-link" href="#Recommendation">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">chardict</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">letter_counts</span><span class="o">.</span><span class="n">most_common</span><span class="p">())</span>
+<span class="n">charFreq</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">chardict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">wordValue</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+    <span class="nb">sum</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
+        <span class="nb">sum</span><span class="o">+=</span><span class="nb">int</span><span class="p">(</span><span class="n">chardict</span><span class="p">[</span><span class="n">c</span><span class="p">])</span>
+    <span class="k">return</span> <span class="nb">sum</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#sort Based on Char Frequency </span>
+<span class="n">sortedFreq</span><span class="o">=</span><span class="p">{}</span>
+<span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">finalWords</span><span class="p">:</span>
+    <span class="n">sortedFreq</span><span class="p">[</span><span class="n">word</span><span class="p">]</span><span class="o">=</span><span class="n">wordValue</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>  
+<span class="n">sortedFreq</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">sortedFreq</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#sort Based on Chars count</span>
+<span class="n">charscount</span><span class="o">=</span><span class="p">{}</span>
+<span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sortedFreq</span><span class="p">:</span>
+    <span class="n">charscount</span><span class="p">[</span><span class="n">word</span><span class="p">]</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">word</span><span class="p">))</span>
+<span class="n">charscount</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">charscount</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">charscount</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">word</span><span class="p">,</span><span class="n">charscount</span><span class="p">[</span><span class="n">word</span><span class="p">],</span><span class="n">sortedFreq</span><span class="p">[</span><span class="n">word</span><span class="p">],</span><span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>saint	5	316
+slant	5	316
+alist	5	314
+saunt	5	314
+salut	5	312
+sault	5	312
+loast	5	309
+canst	5	308
+scant	5	308
+clast	5	306
+spait	5	305
+plast	5	305
+spalt	5	305
+shalt	5	303
+absit	5	301
+blast	5	301
+ascot	5	301
+coast	5	301
+adust	5	300
+hoast	5	298
+boast	5	296
+sabot	5	296
+maist	5	295
+smalt	5	295
+inapt	5	294
+paint	5	294
+plant	5	294
+ahint	5	292
+haint	5	292
+hiant	5	292
+plait	5	292
+waist	5	292
+unapt	5	292
+daint	5	291
+idant	5	291
+hadst	5	291
+claut	5	291
+haunt	5	290
+daunt	5	289
+hault	5	288
+audit	5	287
+adult	5	287
+dault	5	287
+chant	5	284
+clapt	5	284
+faint	5	284
+shaft	5	284
+swapt	5	283
+caput	5	282
+diact	5	281
+about	5	281
+fault	5	280
+capot	5	279
+coapt	5	279
+shakt	5	279
+vaunt	5	279
+habit	5	277
+aloft	5	277
+vault	5	277
+jaunt	5	276
+ayont	5	276
+bahut	5	275
+adopt	5	275
+quant	5	275
+chapt	5	273
+mayst	5	273
+adbot	5	271
+admit	5	270
+ambit	5	269
+daynt	5	269
+davit	5	267
+kaput	5	266
+chaft	5	263
+yacht	5	260
+waift	5	260
+jabot	5	258
+amowt	5	255
+mazut	5	254
+toast	4	393
+scatt	4	390
+taint	4	387
+alant	4	385
+atilt	4	385
+taunt	4	385
+tacit	4	377
+platt	4	376
+avast	4	374
+skatt	4	374
+blatt	4	372
+avant	4	363
+adapt	4	362
+amaut	4	362
+await	4	361
+abaft	4	351
+saist	4	327
+assot	4	322
+sayst	4	305
+naunt	4	303
+allot	4	296
+coact	4	280
+afoot	4	272
+abbot	4	270
+</pre>
+</div>
 </div>
 
 </div>
